@@ -9,8 +9,8 @@ import com.shopping.view.LoginPortal;
  */
 public class Main {
 	
-	public static void main(String args[]) {	
-		LoginPortal.registerPortal();			
+    public static void main(String args[]) {	
+	LoginPortal.registerPortal();			
     }
 }
 
