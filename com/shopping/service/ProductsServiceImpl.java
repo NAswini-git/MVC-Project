@@ -12,35 +12,35 @@ import com.shopping.dao.ProductsDAO;
  *
  */
 public class ProductsServiceImpl implements ProductsService {
-	private static final ProductsDAO PRODUCTS_DAO = new ProductsDAO();
-	private static final ProductsAlterationDAO  MODIFY_PRODUCTS_DAO = new ProductsAlterationDAO();
+    private static final ProductsDAO PRODUCTS_DAO = new ProductsDAO();
+    private static final ProductsAlterationDAO  MODIFY_PRODUCTS_DAO = new ProductsAlterationDAO();
 	
-	/**
-	 * To show the products available. 
-	 */
-	public List<Products> showProductDetails() {
-		System.out.println("Available products are:");
-		return PRODUCTS_DAO.selectAllProducts();
-	}
+    /**
+    * To show the products available. 
+    */
+    public List<Products> showProductDetails() {
+	System.out.println("Available products are:");
+	return PRODUCTS_DAO.selectAllProducts();
+    }
     
-	/**
-	 * To insert product.
-	 */
-	public boolean insertProduct(Products products) {
-		return MODIFY_PRODUCTS_DAO.insertProduct(products);
-	}
+    /**
+    * To insert product.
+    */
+    public boolean insertProduct(Products products) {
+	return MODIFY_PRODUCTS_DAO.insertProduct(products);
+    }
 	
-	/**
-	 * To delete product.
-	 */
-	public boolean deleteProducts(Products products) {
-         return MODIFY_PRODUCTS_DAO.deleteProduct(products); 
-	}
+    /**
+    * To delete product.
+    */
+    public boolean deleteProducts(Products products) {
+        return MODIFY_PRODUCTS_DAO.deleteProduct(products); 
+    }
     
-	/**
-	 * To update product.
-	 */
-	public boolean updateProducts(Products products) {
-		return MODIFY_PRODUCTS_DAO.updateProduct(products);
-	}
+    /**
+    * To update product.
+    */
+    public boolean updateProducts(Products products) {
+	return MODIFY_PRODUCTS_DAO.updateProduct(products);
+    }
 }
