@@ -8,8 +8,8 @@ import com.shopping.dao.ProductsDAO;
 
 /**
  * Implementing class for data modification in product table.
- * @author AswiniN
- *
+ * 
+ *@author AswiniN
  */
 public class ProductsServiceImpl implements ProductsService {
     private static final ProductsDAO PRODUCTS_DAO = new ProductsDAO();
