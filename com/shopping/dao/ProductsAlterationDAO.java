@@ -73,15 +73,15 @@ public class ProductsAlterationDAO {
 	    if (products.getPrice() != null) {
 	        PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_PRICE);
 		    
-         	    preparedStatement.setString(1, products.getPrice());
-		    preparedStatement.setString(2, products.getProductName());
-		    return preparedStatement.execute();
+                preparedStatement.setString(1, products.getPrice());
+		preparedStatement.setString(2, products.getProductName());
+		return preparedStatement.execute();
 	    } else {
 		PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_QUANTITY);
 	    
-		    preparedStatement.setInt(1, products.getQuantity());
-		    preparedStatement.setString(2, products.getProductName());
-		    return preparedStatement.execute();
+		preparedStatement.setInt(1, products.getQuantity());
+		preparedStatement.setString(2, products.getProductName());
+		return preparedStatement.execute();
 	    }
 	} catch (SQLException e) {
 	    System.out.println("Update failure!");
