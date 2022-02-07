@@ -19,8 +19,8 @@ public class ProductsController {
      * @return
      */
     public List<Products> showProductDetails( ) {
-		return PRODUCTS_SERVICE.showProductDetails();	
-	}
+	return PRODUCTS_SERVICE.showProductDetails();	
+    }
     
     /**
      * Insert the product.
@@ -28,7 +28,7 @@ public class ProductsController {
      * @return
      */
     public  boolean insertProduct(Products products) {
-		return PRODUCTS_SERVICE.insertProduct(products);
+	return PRODUCTS_SERVICE.insertProduct(products);
     }
     
     /**
@@ -36,19 +36,16 @@ public class ProductsController {
      * @param products
      * @return
      */
-	public boolean deleteProduct(Products products) {
-		return PRODUCTS_SERVICE.deleteProducts(products);
-	}
+    public boolean deleteProduct(Products products) {
+	return PRODUCTS_SERVICE.deleteProducts(products);
+    }
     
-	/**
-	 * Update the product.
-	 * @param products
-	 * @return
-	 */
-	public boolean updateProducts(Products products) {
-		return PRODUCTS_SERVICE.updateProducts(products);
-	}
-
-	
-
+    /**
+    * Update the product.
+    * @param products
+    * @return
+    */
+    public boolean updateProducts(Products products) {
+	return PRODUCTS_SERVICE.updateProducts(products);
+    }
 }
