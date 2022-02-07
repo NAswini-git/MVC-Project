@@ -5,8 +5,8 @@ import java.util.List;
 import com.shopping.dao.Products;
 /**
  * Interface to provide variation in products table.
- * @author AswiniN
- *
+ * 
+ *@author AswiniN
  */
 public interface ProductsService {
     List<Products> showProductDetails();
