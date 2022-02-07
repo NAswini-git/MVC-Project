@@ -6,20 +6,18 @@ package com.shopping.dao;
  *
  */
 public class Products {
-	private String productName;
-	private String brandName;
-	private String price;
-	private String size;
-	private String user;
-	private int quantity;
+    private String productName;
+    private String brandName;
+    private String price;
+    private String size;
+    private String user;
+    private int quantity;
 	
-	public Products() {
-		
-	}
+    public Products() {
+    }
 	
-	public Products(String productName, String brandName, String price, String size, String user, int quantity) {
-
-	}
+    public Products(String productName, String brandName, String price, String size, String user, int quantity) {
+    }
 	public String getProductName() {
 		return productName;
 	}
