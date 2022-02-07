@@ -10,31 +10,31 @@ import com.shopping.service.AuthenticatorValidation;
  *
  */
 public class AuthenticationController {
-	private static final AuthenticatorValidation AUTHENTICATOR_VALIDATION = new AuthenticatorValidation();
+    private static final AuthenticatorValidation AUTHENTICATOR_VALIDATION = new AuthenticatorValidation();
     /**
      * Validate EmailId.
      * @param emailId
      * @return
      */
-	public boolean validateEmailId(final String emailId) {
-		return AUTHENTICATOR_VALIDATION.validateEmailId(emailId);		
-	}
+    public boolean validateEmailId(final String emailId) {
+	return AUTHENTICATOR_VALIDATION.validateEmailId(emailId);		
+    }
     
-	/**
-	 * Validate Password.
-	 * @param emailId
-	 * @param password
-	 * @return
-	 */
-	public boolean validatePassword(final String emailId,final String password) {	
-		return AUTHENTICATOR_VALIDATION.validtePassword(emailId, password);
-	}
+    /**
+     * Validate Password.
+     * @param emailId
+     * @param password
+     * @return
+     */
+    public boolean validatePassword(final String emailId,final String password) {	
+	return AUTHENTICATOR_VALIDATION.validtePassword(emailId, password);
+    }
     
-	/**
-	 * Insert user details.
-	 * @param user
-	 */
-	public void insertData(User user) {
-		AUTHENTICATOR_VALIDATION.insertData(user);	
-	}
+    /**
+     * Insert user details.
+     * @param user
+     */
+    public void insertData(User user) {
+	AUTHENTICATOR_VALIDATION.insertData(user);	
+    }
 }
