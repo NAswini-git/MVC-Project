@@ -9,11 +9,11 @@ import com.shopping.dao.Products;
  *
  */
 public interface ProductsService {
-	 List<Products> showProductDetails();
+    List<Products> showProductDetails();
 	
-	 boolean insertProduct(Products products);
+    boolean insertProduct(Products products);	 
+	
+    public boolean deleteProducts(Products products);
 	 
-	 public boolean deleteProducts(Products products);
-	 
-	 public boolean updateProducts(Products products);	 
+    public boolean updateProducts(Products products);	 
 }
