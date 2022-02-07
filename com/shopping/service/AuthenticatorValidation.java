@@ -5,8 +5,8 @@ import com.shopping.dao.User;
 
 /**
  * Authenticates the type of User with the help of database.
- * @author AswiniN
  *
+ *@author AswiniN
  */
 public class AuthenticatorValidation  {
     private static final AuthenticatorDAO AUTHENTICATOR_DAO = new AuthenticatorDAO();
